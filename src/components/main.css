@@ -1,0 +1,59 @@
+.my-card{
+    --main-color: #F2F2F2;
+    background:  var(--main-color);
+    background: linear-gradient(135deg, transparent 15px,  var(--main-color) 0);
+    position: relative;
+    background-repeat: no-repeat;
+    color: black;
+}
+.my-card> *>h6{
+    color: #acb0b8;
+    font-weight: normal;
+}
+.red-cat{
+    color: #D91667!important;
+}
+.my-card:hover{
+    cursor: pointer;
+}
+.my-border{
+    --main-color: #2EA8E6;
+    position: relative;
+    background: linear-gradient(135deg, transparent 15px, var(--main-color) 0);
+    padding: 5px;
+}
+
+.circle{
+    --main-color: #2EA8E6;
+    width: 5em;
+    height: 5em;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    background: var(--main-color);
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-left: -50px;
+    color: white;
+}
+.circle> h3{
+    line-height: 0.5;
+}
+.selected{
+    --main-color: #D91667;
+}
+.disabled{
+    --main-color: #b8b8b8;
+}
+.disabled-card{
+    --main-color: #fefefe;
+    opacity: 20%;
+}
+.buy-link{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #2EA8E6;
+}
+.all-card{
+    max-width: 320px;
+}
+
