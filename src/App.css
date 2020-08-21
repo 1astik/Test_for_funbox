@@ -1,17 +1,19 @@
-.wrapper{
-  background-image: url("../src/images/Pattern.png");
-  height: 100%;
-    min-height: 1000px;
-}
-.main{
 
-  margin: 0 auto;
+.wrapper {
+    background-image: url("../src/images/Pattern.png");
+    height: 100%;
+    min-height: 1000px;
+    font-family: Trebuchet MS;
 }
-.active-hover{
-   background:
-           linear-gradient(to bottom, rgba(126, 140, 255, 0.52), transparent);
- }
-.disabled-hover{
-  background:
-          linear-gradient(to bottom, rgba(186, 199, 233, 0.52), transparent);
+
+.main {
+    margin: 0 auto;
+}
+
+.active-hover {
+    background: linear-gradient(to bottom, rgba(126, 140, 255, 0.52), transparent);
+}
+
+.disabled-hover {
+    background: linear-gradient(to bottom, rgba(186, 199, 233, 0.52), transparent);
 }

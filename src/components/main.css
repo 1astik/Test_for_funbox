@@ -10,6 +10,10 @@
     color: #acb0b8;
     font-weight: normal;
 }
+.my-card> *>h1,h4{
+
+    font-weight: bold;
+}
 .red-cat{
     color: #D91667!important;
 }

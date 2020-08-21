@@ -8,7 +8,7 @@ import cat from '../images/Photo.png'
 
 
 
-function statusItem(food, foodSelect) {
+ function statusItem(food, foodSelect) {
     if ( food.status === 'active' ) {
         return <StatusActive food={food} buy={foodSelect}/>
     } else if ( food.status === 'disabled' ) {
@@ -19,8 +19,7 @@ function statusItem(food, foodSelect) {
 }
 
 
-
-function Item( { food, foodSelect, hoverItem, unHoverItem } ) {
+ function Item( { food, foodSelect, hoverItem, unHoverItem } ) {
     const [title, setTitle] =  React.useState('Сказачное заморское яство');
     const classes = [];
     const padding = [];
@@ -30,27 +29,26 @@ function Item( { food, foodSelect, hoverItem, unHoverItem } ) {
 
 
 
-    function enterMouseStatus(food) {
+     function enterMouseStatus(food) {
         if ( food.status === 'active' || food.status === 'disabled') {
-            hoverItem(food.status)
+             hoverItem(food.status)
         } else if ( food.status === 'selected' ) {
-            setTitle( 'Котэ не одобряет?');
-            setcardTitle('red-cat');
+             setTitle( 'Котэ не одобряет?');
+             setcardTitle('red-cat');
         }
     }
 
-    function leaveMouseStatus(food) {
-            unHoverItem();
-            setTitle( 'Сказачное заморское яство')
-            setcardTitle('');
-
+     function leaveMouseStatus(food) {
+             unHoverItem();
+             setTitle( 'Сказачное заморское яство')
+             setcardTitle('');
     }
     
     if ( food.status === 'selected' ) {
-        classes.push('selected');
+         classes.push('selected');
     } else if ( food.status === 'disabled' ) {
-        classes.push('disabled');
-        classesCard.push('disabled-card');
+         classes.push('disabled');
+         classesCard.push('disabled-card');
     }
 
     if ( food.id === 3 ) {

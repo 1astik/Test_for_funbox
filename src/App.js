@@ -5,8 +5,8 @@ import Main from "../src/components/main"
 
 
 
-function App() {
-    const [food, setFood] = React.useState([
+   function App() {
+    const [food, setFood] =  React.useState([
         {
             id: 1,
             item: 'фуа-гра',
@@ -33,9 +33,9 @@ function App() {
         },
     ]);
 
-    const [hoverDefault, setHoverDefault] = React.useState(['main']);
+    const [hoverDefault, setHoverDefault] =  React.useState(['main']);
 
-    function activeToggle(id){
+    async function activeToggle(id){
         setFood(
             food.map(item => {
             if ( item.id === id ) {
@@ -50,16 +50,16 @@ function App() {
         )
     }
 
-    function hoverItem(status) {
+    async function hoverItem(status) {
         if ( status === 'active' ) {
-            setHoverDefault('active-hover')
+            await setHoverDefault('active-hover')
         } else{
-            setHoverDefault('disabled-hover')
+            await setHoverDefault('disabled-hover')
         }
     }
 
-    function unHoverItem() {
-        setHoverDefault('main')
+    async function unHoverItem() {
+        await setHoverDefault('main')
     }
 
   return (
